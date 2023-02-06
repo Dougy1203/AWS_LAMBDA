@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  audition:
+    build: ./audition
+    image: audition:1.0
+  cast_performer:
+    build: ./cast_performer
+    image: cast:1.0
+  create_director:
+    build: ./create_director
+    image: cdirector:1.0
+  create_performer:
+    build: ./create_performer
+    image: cperformer:1.0
+  create_performance:
+    build: ./create_performance
+    image: cperformance:1.0
+  delete_performance:
+    build: ./delete_performance
+    image: dperformance:1.0
+  past_performance:
+    build: ./past_performance
+    image: pperformance:1.0
+  search_performance:
+    build: ./search_performance
+    image: sperformance:1.0
